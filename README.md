@@ -1,3 +1,17 @@
+## 🚀 About SkillBridge AI
+
+**SkillBridge AI** is an AI-powered platform designed to analyze resumes, screen candidates, identify skill gaps, and provide personalized career roadmaps to help users achieve their career goals.
+
+## 🔗 Project Links
+
+- 🌐 **Frontend:** [Live Demo](https://skill-bridge-ai-lime-omega.vercel.app/)
+- 
+- ⚙️ **Backend:** [API Server](https://skillbridge-ai-jlq3.onrender.com)
+- 
+- 💚 **API Health Check:** [Check API Status](https://skillbridge-ai-jlq3.onrender.com/api/health)
+- 
+- 💻 **Repository:** [GitHub Source Code](https://github.com/zaidimam15/SkillBridge-AI)
+
 # SkillBridge AI 🎯
 
 ### ATS Resume Screening & Skill-Gap Diagnostic Platform
