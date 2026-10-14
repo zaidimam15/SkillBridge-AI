@@ -1,4 +1,4 @@
-﻿# SkillBridge AI ðŸŽ¯
+# SkillBridge AI 🎯
 
 ### ATS Resume Screening & Skill-Gap Diagnostic Platform
 
@@ -10,17 +10,17 @@
 
 ---
 
-## ðŸ“Œ Project Description
+## 📌 Project Description
 
 **SkillBridge AI** is a complete, production-style final-year B.Tech Computer Science major project. It is an **ATS Resume Screening & Skill-Gap Diagnostic Platform** that creates a **Three-Way Bridge** connecting:
 
-- ðŸ‘¨â€ðŸŽ“ **Students** â€” Resume analysis, skill-gap diagnosis, learning roadmaps
-- ðŸ¢ **Recruiters/HR** â€” Candidate screening, bulk analysis, shortlisting
-- ðŸ« **College T&P Cells** â€” Institutional analytics, placement readiness, training priorities
+- 👨‍🎓 **Students** — Resume analysis, skill-gap diagnosis, learning roadmaps
+- 🏢 **Recruiters/HR** — Candidate screening, bulk analysis, shortlisting
+- 🏫 **College T&P Cells** — Institutional analytics, placement readiness, training priorities
 
 ---
 
-## ðŸŽ¯ Problem Statement
+## 🎯 Problem Statement
 
 Modern hiring processes rely heavily on ATS (Applicant Tracking System) tools that filter candidates automatically before human review. Students often lack visibility into:
 1. How their resumes perform against job requirements
@@ -31,7 +31,7 @@ Simultaneously, college placement cells lack a centralized system to understand 
 
 ---
 
-## ðŸ”¬ Research Gap
+## 🔬 Research Gap
 
 Existing resume screening tools either:
 - Show only a generic score without explanation
@@ -43,7 +43,7 @@ SkillBridge AI addresses this gap by creating an integrated, explainable, and in
 
 ---
 
-## ðŸŽ¯ Objectives
+## 🎯 Objectives
 
 1. Implement an academic NLP-based ATS compatibility engine (TF-IDF + Cosine Similarity)
 2. Provide transparent, explainable ATS results
@@ -56,30 +56,44 @@ SkillBridge AI addresses this gap by creating an integrated, explainable, and in
 
 ---
 
-## ðŸŒ‰ Three-Way Bridge Architecture
+## 🌉 Three-Way Bridge Architecture
 
+```mermaid
+flowchart TD
+    HUB["<b>SkillBridge AI Platform</b><br/>ATS Resume Screening & Skill-Gap Diagnostic Engine"]
+
+    STUDENT["<b>👨‍🎓 Students</b><br/>• Upload CV (PDF/DOCX/TXT)<br/>• ATS Compatibility Score<br/>• Skill Gap Diagnosis<br/>• Personalized Roadmap"]
+    RECRUITER["<b>🏢 Recruiters / HR</b><br/>• Post Jobs & Extract Skills<br/>• Bulk Candidate Screening<br/>• Candidate Ranking Table<br/>• Shortlist with Notes"]
+    TPCELL["<b>🏫 College T&P Cells</b><br/>• Institutional Analytics<br/>• Student Readiness Matrix<br/>• Training Priority Detection<br/>• Department & Batch Reports"]
+
+    STUDENT <-->|Resume Analysis & Feedback| HUB
+    RECRUITER <-->|Screening & Hiring Pipeline| HUB
+    TPCELL <-->|Readiness Analytics & Training| HUB
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                   SkillBridge AI                     â”‚
-â”‚              ATS & Skill-Gap Platform                â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â†‘                  â†‘                  â†‘
-         â”‚                  â”‚                  â”‚
-  â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
-  â”‚  ðŸ‘¨â€ðŸŽ“ Student â”‚   â”‚ ðŸ¢ Recruiter â”‚   â”‚ ðŸ« T&P Cell â”‚
-  â”‚             â”‚   â”‚              â”‚   â”‚             â”‚
-  â”‚ â€¢ Upload CV â”‚   â”‚ â€¢ Post Jobs  â”‚   â”‚ â€¢ Analytics â”‚
-  â”‚ â€¢ ATS Score â”‚   â”‚ â€¢ Screen CVs â”‚   â”‚ â€¢ Readiness â”‚
-  â”‚ â€¢ Skill Gap â”‚   â”‚ â€¢ Shortlist  â”‚   â”‚ â€¢ Training  â”‚
-  â”‚ â€¢ Roadmap   â”‚   â”‚ â€¢ Compare    â”‚   â”‚ â€¢ Reports   â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+```text
++-------------------------------------------------------------+
+|                       SkillBridge AI                        |
+|                  ATS & Skill-Gap Platform                   |
++-------------------------------------------------------------+
+         ^                          ^                          ^
+         |                          |                          |
+         v                          v                          v
++-----------------+        +------------------+        +---------------+
+| 👨‍🎓 Students    |        | 🏢 Recruiters/HR |        | 🏫 T&P Cells  |
+|                 |        |                  |        |               |
+| - Upload CV     |        | - Post Jobs      |        | - Analytics   |
+| - ATS Score     |        | - Screen CVs     |        | - Readiness   |
+| - Skill Gap     |        | - Shortlist      |        | - Training    |
+| - Roadmap       |        | - Compare        |        | - Reports     |
++-----------------+        +------------------+        +---------------+
 ```
 
 ---
 
-## âœ¨ Features
+## ✨ Features
 
-### ðŸŽ“ Student Features
+### 🎓 Student Features
 - Resume upload (PDF, DOCX, TXT)
 - Structured resume parsing with preview
 - ATS compatibility scoring (TF-IDF + Cosine Similarity)
@@ -94,7 +108,7 @@ SkillBridge AI addresses this gap by creating an integrated, explainable, and in
 - Downloadable PDF report
 - Career readiness score
 
-### ðŸ¢ Recruiter Features
+### 🏢 Recruiter Features
 - Job posting creation
 - JD skill extraction
 - Bulk resume upload & analysis
@@ -104,7 +118,7 @@ SkillBridge AI addresses this gap by creating an integrated, explainable, and in
 - Human-review-first design
 - Candidate comparison
 
-### ðŸ« T&P Cell Features
+### 🏫 T&P Cell Features
 - Institutional analytics dashboard
 - Role-wise student readiness
 - Department & batch analytics
@@ -113,7 +127,7 @@ SkillBridge AI addresses this gap by creating an integrated, explainable, and in
 - Student readiness matrix
 - Historical improvement tracking
 
-### ðŸ” Admin Features
+### 🔒 Admin Features
 - User management
 - Canonical skill management
 - Skill alias management
@@ -125,26 +139,46 @@ SkillBridge AI addresses this gap by creating an integrated, explainable, and in
 
 ---
 
-## ðŸ—ï¸ System Architecture
+## 🏗️ System Architecture
 
+```mermaid
+flowchart TD
+    Client["<b>Client Layer</b><br/>React 18 · Vite · Tailwind CSS"]
+    Server["<b>Server Layer</b><br/>Node.js · Express.js · JWT & RBAC"]
+    AI["<b>AI / NLP Engine</b><br/>Python 3.8+ · scikit-learn · spaCy · NLTK<br/>• PDF/DOCX/TXT parsing<br/>• Skill extraction & normalization<br/>• TF-IDF vectorization<br/>• Cosine similarity<br/>• Skill-gap calculation"]
+    DB[("<b>Database Layer</b><br/>MongoDB Atlas (Mongoose ODM)")]
+
+    Client <-->|REST API| Server
+    Server <-->|HTTP / Subprocess| AI
+    Server <-->|Mongoose ODM| DB
 ```
-client/ (React + Vite + Tailwind)
-    â†• REST API
-server/ (Node.js + Express)
-    â†• HTTP/subprocess
-server/ai/ (Python NLP Engine)
-    - PDF/DOCX/TXT parsing
-    - Skill extraction & normalization
-    - TF-IDF vectorization
-    - Cosine similarity
-    - Skill-gap calculation
-    â†•
-MongoDB Atlas (Cloud Database)
+
+```text
++-------------------------------------------------------------+
+|            Client Layer (React 18 + Vite + Tailwind CSS)    |
++-------------------------------------------------------------+
+                              |
+                              | REST API (HTTP / JSON)
+                              v
++-------------------------------------------------------------+
+|             Server Layer (Node.js + Express.js)             |
++-------------------------------------------------------------+
+               |                               |
+               | HTTP / subprocess             | Mongoose ODM
+               v                               v
++-------------------------------+  +--------------------------+
+|      Python AI/NLP Engine     |  |   MongoDB Atlas (Cloud)  |
+| - PDF/DOCX/TXT parsing        |  |   Database Layer         |
+| - Skill extraction            |  +--------------------------+
+| - TF-IDF vectorization        |
+| - Cosine similarity scoring   |
+| - 4-Tier skill-gap diagnostic |
++-------------------------------+
 ```
 
 ---
 
-## ðŸ› ï¸ Technology Stack
+## 🛠️ Technology Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -162,12 +196,12 @@ MongoDB Atlas (Cloud Database)
 
 ---
 
-## ðŸ“ AI/NLP Methodology
+## 📐 AI/NLP Methodology
 
 ### TF-IDF Vectorization
 
-```
-TF-IDF(t, d) = TF(t, d) Ã— IDF(t)
+```text
+TF-IDF(t, d) = TF(t, d) × IDF(t)
 
 where:
   TF(t, d)  = frequency of term t in document d
@@ -178,34 +212,34 @@ where:
 
 ### Cosine Similarity
 
-```
-cos(Î¸) = (R Â· J) / (||R|| Ã— ||J||)
+```text
+cos(θ) = (R · J) / (||R|| × ||J||)
 
 where:
   R = TF-IDF vector of resume
   J = TF-IDF vector of job description
-  Î¸ = angle between vectors
+  θ = angle between vectors
 ```
 
 The similarity is converted to an ATS Compatibility Percentage.
 
-> âš ï¸ **Academic Disclaimer**: ATS Compatibility Score represents similarity calculated by SkillBridge AI using TF-IDF + Cosine Similarity. This is an academic indicator and may differ from proprietary employer ATS systems.
+> ⚠️ **Academic Disclaimer**: ATS Compatibility Score represents similarity calculated by SkillBridge AI using TF-IDF + Cosine Similarity. This is an academic indicator and may differ from proprietary employer ATS systems.
 
 ### Skill-Gap Calculation
 
-```
+```text
 Missing Skills = Required JD Skills - Extracted Resume Skills
 
 Four-Tier Classification:
-  Strong    â†’ Score â‰¥ 0.8 in skill match
-  Moderate  â†’ Score 0.5â€“0.79 in skill match
-  Priority  â†’ Score < 0.5 but in top JD requirements
-  Recommended â†’ Useful but not core JD requirements
+  Strong      → Score ≥ 0.8 in skill match
+  Moderate    → Score 0.5–0.79 in skill match
+  Priority    → Score < 0.5 but in top JD requirements
+  Recommended → Useful but not core JD requirements
 ```
 
 ---
 
-## ðŸ‘¥ User Roles
+## 👥 User Roles
 
 | Role | Description |
 |------|-------------|
@@ -216,50 +250,49 @@ Four-Tier Classification:
 
 ---
 
-## ðŸ“ Project Structure
+## 📁 Project Structure
 
-```
+```text
 skillbridge-ai/
-â”‚
-â”œâ”€â”€ client/                   # React + Vite Frontend
-â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”œâ”€â”€ components/       # Reusable UI components
-â”‚   â”‚   â”œâ”€â”€ pages/            # Page components
-â”‚   â”‚   â”œâ”€â”€ layouts/          # Layout wrappers
-â”‚   â”‚   â”œâ”€â”€ hooks/            # Custom React hooks
-â”‚   â”‚   â”œâ”€â”€ services/         # API service layer
-â”‚   â”‚   â”œâ”€â”€ context/          # React context providers
-â”‚   â”‚   â”œâ”€â”€ utils/            # Utility functions
-â”‚   â”‚   â”œâ”€â”€ charts/           # Chart components
-â”‚   â”‚   â””â”€â”€ assets/           # Static assets
-â”‚   â””â”€â”€ package.json
-â”‚
-â”œâ”€â”€ server/                   # Node.js Backend
-â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”œâ”€â”€ controllers/      # Route handlers
-â”‚   â”‚   â”œâ”€â”€ routes/           # Express routes
-â”‚   â”‚   â”œâ”€â”€ models/           # Mongoose models
-â”‚   â”‚   â”œâ”€â”€ middleware/       # Custom middleware
-â”‚   â”‚   â”œâ”€â”€ services/         # Business logic
-â”‚   â”‚   â”œâ”€â”€ utils/            # Utilities
-â”‚   â”‚   â”œâ”€â”€ config/           # Configuration
-â”‚   â”‚   â””â”€â”€ validators/       # Input validation
-â”‚   â”œâ”€â”€ ai/                   # Python AI/NLP Module
-â”‚   â”‚   â”œâ”€â”€ parser/           # Resume/JD parsers
-â”‚   â”‚   â”œâ”€â”€ nlp/              # NLP preprocessing
-â”‚   â”‚   â”œâ”€â”€ matching/         # TF-IDF matching engine
-â”‚   â”‚   â”œâ”€â”€ skills/           # Skill dictionary
-â”‚   â”‚   â””â”€â”€ requirements.txt
-â”‚   â”œâ”€â”€ uploads/              # File storage
-â”‚   â””â”€â”€ .env.example
-â”‚
-â”œâ”€â”€ docs/                     # Documentation
-â””â”€â”€ README.md
+|-- client/                   # React + Vite Frontend
+|   |-- src/
+|   |   |-- components/       # Reusable UI components
+|   |   |-- pages/            # Page components
+|   |   |-- layouts/          # Layout wrappers
+|   |   |-- hooks/            # Custom React hooks
+|   |   |-- services/         # API service layer
+|   |   |-- context/          # React context providers
+|   |   |-- utils/            # Utility functions
+|   |   |-- charts/           # Chart components
+|   |   `-- assets/           # Static assets
+|   `-- package.json
+|
+|-- server/                   # Node.js Backend
+|   |-- src/
+|   |   |-- controllers/      # Route handlers
+|   |   |-- routes/           # Express routes
+|   |   |-- models/           # Mongoose models
+|   |   |-- middleware/       # Custom middleware
+|   |   |-- services/         # Business logic
+|   |   |-- utils/            # Utilities
+|   |   |-- config/           # Configuration
+|   |   `-- validators/       # Input validation
+|   |-- ai/                   # Python AI/NLP Module
+|   |   |-- parser/           # Resume/JD parsers
+|   |   |-- nlp/              # NLP preprocessing
+|   |   |-- matching/         # TF-IDF matching engine
+|   |   |-- skills/           # Skill dictionary
+|   |   `-- requirements.txt
+|   |-- uploads/              # File storage
+|   `-- .env.example
+|
+|-- docs/                     # Documentation
+`-- README.md
 ```
 
 ---
 
-## ðŸš€ Installation & Setup
+## 🚀 Installation & Setup
 
 ### Prerequisites
 
@@ -328,7 +361,7 @@ npm run dev
 
 ---
 
-## ðŸ”‘ Environment Variables
+## 🔑 Environment Variables
 
 See `server/.env.example` for all required variables:
 
@@ -344,7 +377,7 @@ UPLOAD_MAX_SIZE=5242880
 
 ---
 
-## ðŸ“¡ API Documentation
+## 📡 API Documentation
 
 ### Authentication
 | Method | Endpoint | Description |
@@ -381,7 +414,7 @@ UPLOAD_MAX_SIZE=5242880
 
 ---
 
-## ðŸ” Security
+## 🔒 Security
 
 - JWT authentication with refresh token strategy
 - Passwords hashed with bcryptjs (12 rounds)
@@ -397,9 +430,9 @@ UPLOAD_MAX_SIZE=5242880
 
 ---
 
-## âš–ï¸ Privacy & Responsible AI
+## ⚖️ Privacy & Responsible AI
 
-- Resumes contain sensitive personal data â€” stored securely
+- Resumes contain sensitive personal data — stored securely
 - User-controlled data deletion
 - No sensitive attributes (gender, caste, religion, race) used in matching
 - AI assists human decision-making; never auto-rejects candidates
@@ -408,7 +441,7 @@ UPLOAD_MAX_SIZE=5242880
 
 ---
 
-## ðŸ”® Future Scope
+## 🔮 Future Scope
 
 - Semantic embedding matching (BERT/Sentence-Transformers)
 - LinkedIn profile import
@@ -420,7 +453,7 @@ UPLOAD_MAX_SIZE=5242880
 
 ---
 
-## âš ï¸ Limitations
+## ⚠️ Limitations
 
 - ATS scores are academic indicators, not employer-grade ATS guarantees
 - Scanned PDFs (image-based) may not parse correctly
@@ -429,7 +462,7 @@ UPLOAD_MAX_SIZE=5242880
 
 ---
 
-## ðŸ“Š Academic Integrity
+## 📊 Academic Integrity
 
 All performance metrics and statistics in this project are:
 - Based on the implemented algorithm
@@ -441,7 +474,7 @@ Final quantitative performance values will be reported after controlled testing 
 
 ---
 
-## ðŸ‘¥ Team
+## 👥 Team
 
 - **Developer**: MD Zaid Imam
 - **Supervisor**: [Supervisor Name]
@@ -450,12 +483,10 @@ Final quantitative performance values will be reported after controlled testing 
 
 ---
 
-## ðŸ“„ License
+## 📄 License
 
-MIT License â€” see [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-*SkillBridge AI â€” Bridging the gap between education and employment.*
-
-
+*SkillBridge AI — Bridging the gap between education and employment.*
